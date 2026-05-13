@@ -16,5 +16,4 @@ Luego deberas de ejecutar el archivo de grabación en la carpeta de "Scripts", u
 ```bash
 python grabar.py
 ```
-
 ### Preprocesar
