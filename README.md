@@ -1,19 +1,143 @@
-# ProyectoFinal_IA
-Panel de domótica sencillo, controlado por voz.
+# Proyecto Final IA — Universidad Rafael Landívar
 
-## Corpus
-En esta parte se encuentran las indicaciones para poder aportar a la construcción general del corpus.
+## Panel de Domótica Controlado por Voz
 
-### Instalar requerimientos
+Sistema de domótica inteligente desarrollado como proyecto final del curso de Inteligencia Artificial.  
+El proyecto permite controlar dispositivos mediante comandos de voz utilizando procesamiento de audio y modelos de Machine Learning.
+
+---
+
+# Características
+
+- Reconocimiento de comandos de voz
+- Procesamiento y clasificación de audio
+- Comunicación con Arduino mediante puerto serial
+- Preprocesamiento de muestras de audio
+- Control domótico básico
+
+---
+
+# Tecnologías Utilizadas
+
+- Python
+- PyTorch
+- NumPy
+- Librosa
+- Scikit-learn
+- PySerial
+- Matplotlib
+
+---
+
+# Instalación
+
+## 1. Clonar el repositorio
 
 ```bash
+git clone <URL_DEL_REPOSITORIO>
+cd ProyectoFinal_IA
+```
+
+---
+
+## 2. Crear entorno virtual (Recomendado)
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+---
+
+## 3. Instalar dependencias
+
+Para evitar errores de compatibilidad, instalar las librerías en el siguiente orden:
+
+```bash
+pip install numpy
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
 pip install -r requirements.txt
 ```
 
-### Grabar Muestras
-Luego deberas de ejecutar el archivo de grabación en la carpeta de "Scripts", usando el siguiente comando (Estando dentro de la carpeta):
+---
+
+# Corpus de Audio
+
+Esta sección contiene las herramientas necesarias para la creación y procesamiento del corpus de voz utilizado por el modelo.
+
+---
+
+## Grabar Muestras
+
+Ejecutar el siguiente script dentro de la carpeta `Scripts`:
 
 ```bash
 python grabar.py
 ```
-### Preprocesar
+
+Este script permite capturar nuevas muestras de voz para entrenamiento.
+
+---
+
+## Preprocesar Audio
+
+Ejecutar:
+
+```bash
+python preprocesar.py
+```
+
+Este proceso limpia y transforma las muestras de audio para prepararlas para el entrenamiento del modelo.
+
+---
+
+# Estructura del Proyecto
+
+```text
+ProyectoFinal_IA/
+│
+├── Scripts/
+│   ├── grabar.py
+│   ├── preprocesar.py
+│
+├── Corpus/
+├── Modelos/
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# Ejecución
+
+Una vez instaladas las dependencias y procesado el corpus, ejecutar el sistema principal:
+
+```bash
+python main.py
+```
+
+---
+
+# Autores
+
+Proyecto desarrollado para la Universidad Rafael Landívar.
+
+- Jose Enríquez
+- [Agregar integrantes]
+
+---
+
+# Licencia
+
+Proyecto desarrollado únicamente con fines educativos.
