@@ -38,27 +38,7 @@ git clone <URL_DEL_REPOSITORIO>
 cd ProyectoFinal_IA
 ```
 
----
-
-## 2. Crear entorno virtual (Recomendado)
-
-### Linux / macOS
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### Windows
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
----
-
-## 3. Instalar dependencias
+## 2. Instalar dependencias
 
 Para evitar errores de compatibilidad, instalar las librerías en el siguiente orden:
 
@@ -100,24 +80,6 @@ python preprocesar.py
 
 Este proceso limpia y transforma las muestras de audio para prepararlas para el entrenamiento del modelo.
 
----
-
-# Estructura del Proyecto
-
-```text
-ProyectoFinal_IA/
-│
-├── Scripts/
-│   ├── grabar.py
-│   ├── preprocesar.py
-│
-├── Corpus/
-├── Modelos/
-├── requirements.txt
-└── README.md
-```
-
----
 
 # Ejecución
 
