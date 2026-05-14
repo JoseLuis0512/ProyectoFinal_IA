@@ -1,0 +1,16 @@
+REPORTE DE MÉTRICAS — MODELO CNN
+==================================================
+
+              precision    recall  f1-score   support
+
+      ALARMA       0.98      0.93      0.95        87
+       APAGA       0.94      0.98      0.96        87
+     DETENTE       0.96      0.92      0.94        87
+    ENCIENDE       0.98      0.97      0.97        91
+    PERSIANA       0.92      0.98      0.95        87
+ RUIDO_FONDO       1.00      1.00      1.00        82
+ TEMPERATURA       0.97      0.98      0.97        86
+
+    accuracy                           0.96       607
+   macro avg       0.96      0.96      0.96       607
+weighted avg       0.96      0.96      0.96       607
