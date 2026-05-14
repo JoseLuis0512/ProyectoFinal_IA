@@ -1,0 +1,15 @@
+REPORTE DE MÉTRICAS — MODELO LSTM
+==================================================
+
+                      precision    recall  f1-score   support
+
+        APAGA_ALARMA       0.31      0.30      0.31        67
+      APAGA_PERSIANA       0.50      0.04      0.08        67
+   APAGA_TEMPERATURA       0.29      0.62      0.40        68
+     ENCIENDE_ALARMA       0.39      0.31      0.34        68
+   ENCIENDE_PERSIANA       0.37      0.51      0.43        68
+ENCIENDE_TEMPERATURA       0.23      0.15      0.18        67
+
+            accuracy                           0.32       405
+           macro avg       0.35      0.32      0.29       405
+        weighted avg       0.35      0.32      0.29       405
