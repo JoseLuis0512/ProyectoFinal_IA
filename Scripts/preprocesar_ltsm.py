@@ -33,11 +33,11 @@ from sklearn.model_selection import train_test_split
 # CONFIGURACIÓN
 # ──────────────────────────────────────────────
 SAMPLE_RATE      = 16000
-DURACION_SEG     = 3.5       # los comandos compuestos duran más que los simples
+DURACION_SEG     = 2.5       # duración de las grabaciones reales
 N_MFCC           = 40
 N_FFT            = 512
 HOP_LENGTH       = 160
-N_FRAMES         = 64        # longitud fija de la secuencia temporal (padding/recorte)
+N_FRAMES         = 128       # longitud fija de la secuencia temporal (padding/recorte)
 
 CARPETA_CORPUS   = "corpus_lstm"
 CARPETA_SALIDA   = "datos_procesados"
@@ -47,8 +47,6 @@ PROP_TEST = 0.15
 
 CLASES_LSTM = [
     "ENCIENDE_ALARMA",
-    "ENCIENDE_PERSIANA",
-    "ENCIENDE_TEMPERATURA",
     "APAGA_ALARMA",
     "APAGA_PERSIANA",
     "APAGA_TEMPERATURA",
